@@ -50,8 +50,8 @@ function spawn_furby(){
     ball.src = "https://cdn.britannica.com/68/195168-050-BBAE019A/football.jpg"
     ball.style.position = "absolute"
     ball.style.left = "500"
-    ball.width = 500
-    ball.height = 500
+    ball.width = 100
+    ball.height = 100
     furby.style.position = "absolute"
     furby.style.left = "500"
     furbies.appendChild(ball)
