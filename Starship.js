@@ -53,8 +53,8 @@ function spawn_furby(){
     furby.style.position = "absolute"
     furby.style.left = "500"
     furbies.appendChild(ball)
-    ball.width = 100
-    ball.height = 100
+    ball.width = 50
+    ball.height = 50
     furbies.appendChild(furby)
 }
 start()
