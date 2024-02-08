@@ -31,6 +31,7 @@ function shoot_bullet(){
         newBullet.height = 100
         newBullet.width = 100
         Bullets.appendChild(newBullet)
+        collison_remove = collison_remove.concat(newBullet)
         setTimeout(move_bullet, 16, newBullet, 0)
         cool_down = true
         setTimeout(non_mashine, 500)
