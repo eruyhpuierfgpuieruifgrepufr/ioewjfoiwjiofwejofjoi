@@ -44,10 +44,17 @@ function non_mashine(){
     cool_down = false
 }
 function spawn_furby(){
+    let ball = document.createElement("img")
     let furby = document.createElement("img")
     furby.src = "https://lh4.googleusercontent.com/YxbtUeT3xEEf_jM_HT9jljkZVZpCs5s73u_0nxXI8tE3NebkfJEfdJcifIW0_CvbTZsq9-Gd_iufkwLfwCn_aX4g5SYMiVqFa8TsMvfF9vMOeRqbxVzpA8H-VkjHoUyaumKCVOagaHmSE0AnmFD-uNuSQA=s2048"
+    ball.src = "https://cdn.britannica.com/68/195168-050-BBAE019A/football.jpg"
+    ball.style.position = "absolute"
+    ball.style.left = "500"
+    ball.width = 500
+    ball.height = 500
     furby.style.position = "absolute"
     furby.style.left = "500"
+    furbies.appendChild(ball)
     furbies.appendChild(furby)
 }
 start()
