@@ -3,6 +3,7 @@ let Bullets = document.getElementById("Bullets")
 let furbies = document.getElementById("furbies")
 let left_pos = 500
 let cool_down = false
+let collison_remove = []
 function start(){
     Starship.style.position = "absolute"
     update_pos()
@@ -49,5 +50,6 @@ function spawn_furby(){
     furby.style.position = "absolute"
     furby.style.left = "500"
     furbies.appendChild(furby)
+    collison_remove = collison_remove.concat(furby)
 }
 start()
